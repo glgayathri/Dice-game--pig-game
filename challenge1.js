@@ -31,7 +31,7 @@ document.querySelector('.btn-roll').addEventListener('click', function () {
         else if (previousDice === 6 && dice === 6)   //When the player has rolled '6' 2 times in a row the chance goes to the NEXT PLAYER and looses his GLOBAL SCORE
         {
             scores[activePlayer] = 0;
-            document.querySelector('#score-'+activePlayer).textContent = '0';
+            document.querySelector('#score-' + activePlayer).textContent = '0';
             console.log(scores[activePlayer]);
             pnextPlayer();
         }
